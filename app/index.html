@@ -1,7 +1,7 @@
  <!DOCTYPE html>
 <html>
 <head>
-    <title>Brunssit kartalla</title>
+    <title>Brunches in a map</title>
     <meta name="viewport" content="initial-scale=1.0">
     <meta charset="utf-8">
     
@@ -23,16 +23,18 @@
 
     <div class="grid-container">
         <div class="item1">
-                <h1>Brunssit kartalla</h1>
+                <h1>Brunches in a map</h1>
+                <p>Beta version with test data</p>
         </div>                
         <div class="item2">
             <button id="home">Home</button>
             <button id="helsinki">Helsinki</button>
             <button id="tampere">Tampere</button>
-            <button onclick="infoService()">Info</button>
 
-            <input id="searchBox" type="text">
+            <input id="searchBox" type="text" value="name">
             <button id="searchButton" type="submit" onclick="searchJSON()">Search!</button>
+
+            <button onclick="infoService()">Info</button>
 
         </div>
     </div>
