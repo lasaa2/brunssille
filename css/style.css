@@ -1,0 +1,72 @@
+
+
+
+    /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+
+       #map {
+           height: 100%;
+       }
+
+      /* Optional: Makes the sample page fill the window. */
+      
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+
+      #infowindow {
+        scroll-behavior: auto;
+        max-height: 8em;
+      }
+
+      .grid-container {
+        display: grid;
+        grid-template-columns: auto;
+        position: fixed;
+        left: 50%;
+        background-color: rgba(93, 93, 93, 25%);
+        text-align: center;
+        padding: 0px 20px 10px 20px;
+        transform: translateX(-50%);
+        width:100%;
+        z-index: 1;
+      }
+
+      @media screen and (max-width: 360px) {
+        .grid-container {
+            display: grid;
+            grid-template-columns: auto;
+            position: fixed;
+            background-color: rgba(93, 93, 93, 40%);
+            text-align: center;
+            padding: 0px 20px 10px 20px;
+            transform: translateX(-50%);
+            width:100%;
+            z-index: 1;
+          }
+
+      }
+
+      .item1 {
+        font-size: 12px;
+      }
+
+      @media screen and (max-width: 360px) {
+
+        .item1 {
+            font-size: 8px;
+        }
+      }
+
+      button {
+          margin-left: 5px;
+      }
+
+      @media screen and (max-width: 197px) {
+
+        button {
+            margin-top: 5px;
+        }
+      }

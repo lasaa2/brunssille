@@ -1,0 +1,45 @@
+ <!DOCTYPE html>
+<html>
+<head>
+    <title>Brunssit kartalla</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    
+    <!-- CSS-->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+
+    <!-- JS-->
+
+    <script src="js/map.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+    <div class="grid-container">
+        <div class="item1">
+                <h1>Brunssit kartalla</h1>
+        </div>                
+        <div class="item2">
+            <button id="home">Home</button>
+            <button id="helsinki">Helsinki</button>
+            <button id="tampere">Tampere</button>
+
+            <input id="searchBox" type="text">
+            <button id="searchButton" type="submit" onclick="searchJSON()">Search!</button>
+
+        </div>
+    </div>
+    <div id="map"></div>
+    
+
+</body>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA4MYQTH1q7ss37UTR4IiYmsUGlN6DMXek&callback=initMap" async defer></script>
+
+</html> 
